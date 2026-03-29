@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velkommen</title>
+  <style>
+    /* Bakgrunn */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('IMG_5185.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Overlay for litt mørkere effekt */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4); /* mørkere bakgrunn for bedre kontrast */
+      z-index: 0;
+    }
+
+    /* Overskrift */
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      text-shadow: 2px 2px 8px #000;
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Container for knappene */
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 50px 20px;
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Stil for knappene */
+    .btn {
+      background-color: rgba(255, 255, 255, 0.2); /* gjennomsiktig */
+      color: #fff;
+      padding: 15px 25px;
+      border: 2px solid #fff;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Mobilvennlig */
+    @media (max-width: 600px) {
+      .btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Velkommen</h1>
+  <div class="button-container">
+    <!-- Nyheter -->
+    <a class="btn" href="https://www.vg.no" target="_blank">VG</a>
+    <a class="btn" href="https://www.dagbladet.no" target="_blank">Dagbladet</a>
+    <a class="btn" href="https://www.nettavisen.no" target="_blank">Nettavisen</a>
+    <a class="btn" href="https://www.tb.no" target="_blank">TB.no</a>
+    <a class="btn" href="https://www.sb.no" target="_blank">SB.no</a>
+    <a class="btn" href="https://www.dt.no" target="_blank">DT.no</a>
+    <a class="btn" href="https://www.nrk.no/radio/p1" target="_blank">NRK P1</a>
+    <a class="btn" href="https://tv.nrk.no/live" target="_blank">NRK TV Direkte</a>
+    <a class="btn" href="https://tv.nrk.no/programmer/epg" target="_blank">NRK1</a>
+
+    <!-- Musikk -->
+    <a class="btn" href="https://www.spotify.com" target="_blank">Spotify</a>
+    <a class="btn" href="https://music.apple.com" target="_blank">Apple Musikk</a>
+
+    <!-- Sosiale medier -->
+    <a class="btn" href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a class="btn" href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a class="btn" href="https://www.msn.com" target="_blank">MSN</a>
+
+    <!-- Andre -->
+    <a class="btn" href="https://www.google.com/maps" target="_blank">Maps</a>
+    <a class="btn" href="https://www.google.com" target="_blank">Google Search</a>
+    <a class="btn" href="https://www.yr.no" target="_blank">Vær</a>
+  </div>
+</body>
+</html>
